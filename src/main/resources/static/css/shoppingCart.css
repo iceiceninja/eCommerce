@@ -1,0 +1,30 @@
+.product
+{
+    border: 1px black solid;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+#products-containter
+{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+#link-container
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+}
+a
+{
+    border: 1px solid lightblue;
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    
+    background: lightblue;  
+}

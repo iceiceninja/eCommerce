@@ -1,0 +1,2 @@
+2,Jolly Rancher,0.15,A single Jolly Rancher. Cherry flavored.
+3,Vacuum,70.0,A standard vacuum cleaner for typical household usage.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Product List</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+        <link rel="stylesheet" type="text/css" th:href="@{/css/productsList.css}">
+    </head>
+    <body>
+        <div id='link-container'>
+            <a href="/add-product">Add Product</a>
+            <a href="/home">Home</a>    
+        </div>
+
+
+        <h1>Products for Sale</h1>
+        <div id="products-containter">
+            <div th:each="product : ${productList}" class="product">
+                <h2 th:text="${product.name}"></h2>
+                <h1 th:text="'$'+${product.price}"></h1>
+                <p th:text="${product.description}">
+                <form th:action="@{/addToCart/{productId}(productId=${product.id})}" method="post">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

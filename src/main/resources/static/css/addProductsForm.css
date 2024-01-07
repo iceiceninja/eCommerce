@@ -1,0 +1,44 @@
+/*.product
+{
+    border: 1px black solid;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+#products-containter
+{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+#link-container
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+}*/
+body
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+#form
+{
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+a
+{
+    border: 1px solid lightblue;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+a:hover
+{
+
+    background: lightblue;
+}
